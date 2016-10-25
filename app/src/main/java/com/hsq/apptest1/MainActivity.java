@@ -46,12 +46,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                 }
-                if (temp + 1 < 3) {
-                    for (int i = temp + 1; i < 3; i++) {
-                        FrameLayout frameLayout = (FrameLayout) linearLayout.findViewWithTag("frameLayout" + i);
-                        TextView textView = (TextView) frameLayout.findViewById(R.id.tags);
-                        frameLayout.setVisibility(View.GONE);
-                    }
+                for (int i = temp + 1; i < 3; i++) {
+                    FrameLayout frameLayout = (FrameLayout) linearLayout.findViewWithTag("frameLayout" + i);
+                    TextView textView = (TextView) frameLayout.findViewById(R.id.tags);
+                    frameLayout.setVisibility(View.GONE);
                 }
             }
         });
