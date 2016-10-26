@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     FrameLayout frameLayout = (FrameLayout) linearLayout.findViewWithTag("frameLayout" + i);
                     TextView textView = (TextView) frameLayout.findViewById(R.id.tags);
                     if (textView.getLineCount() == 1) {
-                        frameLayout.setVisibility(textView.VISIBLE);
+                        frameLayout.setVisibility(View.VISIBLE);
                     } else if (textView.getLineCount() >= 2) {
                         frameLayout.setVisibility(View.GONE);
                         temp = i;
